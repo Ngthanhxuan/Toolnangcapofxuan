@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phân Tích Tài/Xỉu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Phân Tích Tài/Xỉu</h1>
+
+    <h3>1. Phân tích từ file CSV</h3>
+    <input type="file" id="fileInput" accept=".csv" />
+    <button onclick="analyze()">Phân tích file</button>
+
+    <h3>2. Nhập thủ công</h3>
+    <input type="text" id="manualInput" placeholder="Ví dụ: 3,4,5" />
+    <button onclick="addManualEntry()">Thêm</button>
+
+    <h3>3. Phân tích từ hình ảnh</h3>
+    <input type="file" id="imageInput" accept="image/*" />
+    <p>(Chức năng này đang được phát triển...)</p>
+
+    <div id="results"></div>
+    <canvas id="chart" width="400" height="200"></canvas>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
